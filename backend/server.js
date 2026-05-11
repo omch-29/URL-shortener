@@ -30,7 +30,6 @@ app.get("/:code", async (req, res) => {
     if (!url) {
       return res.status(404).json({ error: "Short URL not found" });
     }
- 
     return res.redirect(url.originalUrl);
   } catch (err) {
     console.error(err);
@@ -50,3 +49,4 @@ mongoose
     console.error("❌ MongoDB connection failed:", err.message);
     process.exit(1);
   });
+
