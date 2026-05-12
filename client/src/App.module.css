@@ -1,0 +1,122 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient background orbs */
+.orb1 {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 106, 255, 0.12) 0%, transparent 70%);
+  top: -200px;
+  left: -200px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb2 {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 106, 106, 0.08) 0%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  animation: fadeUp 0.6s ease both;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logoMark {
+  font-size: 2.5rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.logoText {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-weight: 300;
+}
+
+/* Stat bar */
+.statBar {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s 0.1s ease both;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.statDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Sections */
+.formSection {
+  animation: fadeUp 0.6s 0.15s ease both;
+}
+
+.listSection {
+  animation: fadeUp 0.6s 0.25s ease both;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
