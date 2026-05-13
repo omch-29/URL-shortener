@@ -18,7 +18,7 @@ const urlSchema = new mongoose.Schema({
     },
     lastAccessed:{
         type: Date,
-        default: NULL
+        default: null
     }
 },
 {timestamps: true});

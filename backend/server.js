@@ -2,8 +2,9 @@ import { configDotenv } from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import urlRoute from './urlRoute';
-import Url from './URL';
+import cors from 'cors';
+import urlRoute from './urlRoute.js';
+import Url from './URL.js';
 
 
 dotenv.config();
