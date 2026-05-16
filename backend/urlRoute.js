@@ -80,7 +80,6 @@ router.get("/stats/:code", async (req, res) => {
   }
 });
  
-// GET /api/urls — get all shortened URLs (paginated)
 router.get("/urls", async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
