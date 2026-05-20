@@ -109,6 +109,7 @@ router.get("/urls", async (req, res) => {
   }
 });
 
+//delete route
 router.delete("/urls/:code", async (req, res) => {
   try {
     const url = await Url.findOneAndDelete({ shortCode: req.params.code });
