@@ -118,7 +118,3 @@ export default function ShortenForm({ onShortened }) {
   );
 }
 
-
-// <div>
-
-// </div>
