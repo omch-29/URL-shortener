@@ -28,4 +28,3 @@ urlSchema.index({shortCode: 1});
 const Url = mongoose.model("Url", urlSchema);
 
 export default Url;
-//modal
