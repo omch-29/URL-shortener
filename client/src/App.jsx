@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ShortenForm from "./components/ShortenForm.jsx";
+import SF from "./components/SF.jsx";
 import UrlList from "./components/UrlList.jsx";
 import styles from "./App.module.css";
 
@@ -47,7 +47,7 @@ export default function App() {
 
         {/* Main form */}
         <section className={styles.formSection}>
-          <ShortenForm onShortened={handleShortened} />
+          <SF onShortened={handleShortened} />
         </section>
 
         {/* URL List */}

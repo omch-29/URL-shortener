@@ -1,9 +1,9 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import styles from "./ShortenForm.module.css";
 
 const BASE = "/api";
 
-export default function ShortenForm({ onShortened }) {
+export default function SF({ onShortened }) {
   const [url, setUrl] = useState("");
   const [customCode, setCustomCode] = useState("");
   const [showCustom, setShowCustom] = useState(false);
