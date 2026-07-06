@@ -7,7 +7,7 @@ export default function App() {
   const [refreshKey, setRefreshKey] = useState(0);
 
   function handleShortened() {
-    // Trigger UrlList to re-fetch
+    
     setRefreshKey((k) => k + 1);
   }
 
