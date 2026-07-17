@@ -29,7 +29,7 @@ export default function App() {
           </p>
         </header>
 
-        {/* Hero stat bar */}
+        
         <div className={styles.statBar}>
           <div className={styles.statItem}>
             <span className={styles.statDot} style={{ background: "#7c6aff" }} />
