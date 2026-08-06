@@ -45,7 +45,7 @@ export default function SF({ onShortened }) {
     setTimeout(() => setCopied(false), 2000);
   }
 
-  //to handle reset
+  
   function handleReset() {
     setResult(null);
     setUrl("");
