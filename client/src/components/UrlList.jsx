@@ -13,6 +13,8 @@ function timeAgo(dateStr) {
   return `${days}d ago`;
 }
 
+
+//list
 function truncate(str, max = 40) {
   return str.length > max ? str.slice(0, max) + "…" : str;
 }
@@ -24,7 +26,7 @@ export default function UrlList({ refreshKey }) {
   const [deletingCode, setDeletingCode] = useState(null);
   const [copiedCode, setCopiedCode] = useState(null);
 
-  
+
   const load = useCallback(async () => {
     setLoading(true);
     try {
