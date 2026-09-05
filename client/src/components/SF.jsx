@@ -11,7 +11,7 @@ export default function SF({ onShortened }) {
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(false);
-
+// a function
   async function handleSubmit(e) {
     e.preventDefault();
     if (!url.trim()) return;
