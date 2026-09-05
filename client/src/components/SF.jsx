@@ -38,7 +38,6 @@ export default function SF({ onShortened }) {
     }
   }
 
-  
   async function handleCopy() {
     await navigator.clipboard.writeText(result.shortUrl);
     setCopied(true);
