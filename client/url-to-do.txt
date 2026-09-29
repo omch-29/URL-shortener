@@ -1,1 +1,3 @@
+this is justa text based notes for team
 URL -> tinyURL
+using encoding
