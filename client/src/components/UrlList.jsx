@@ -13,7 +13,7 @@ function timeAgo(dateStr) {
   return `${days}d ago`;
 }
 
-//URL list
+//URL list.jsx
 function truncate(str, max = 40) {
   return str.length > max ? str.slice(0, max) + "…" : str;
 }
