@@ -24,7 +24,7 @@ const urlSchema = new mongoose.Schema({
 {timestamps: true});
 
 urlSchema.index({shortCode: 1});
-
+//URL
 const Url = mongoose.model("Url", urlSchema);
 
 export default Url;
