@@ -20,7 +20,8 @@ app.use('/api', urlRoute);
 
 app.get("/:code", async (req, res) => {
   const { code } = req.params;
- 
+
+  
   try {
     const url = await Url.findOneAndUpdate(
       { shortCode: code },
